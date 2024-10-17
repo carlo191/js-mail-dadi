@@ -1,7 +1,7 @@
 /*Mail
 Chiedi all'utente la sua email,
 controlla che sia nella lista di chi può accedere,
-stampa un messaggio appropriato sull'esito del controllo. */
+stampa un messaggio appropriato sull'esito del controllo. 
 // RACCOLTA DATI
 const userEmail = prompt(`Immetti la tua email`);
 const listEmail = [`me@email.it`, `tu@email.it`, `io@email.it`, `lei@email.it`];
@@ -14,7 +14,7 @@ for (let i = 0; i < listEmail.length; i++)
   if (userEmail === listEmail[i]) {
     emailOk = true;
   }
-alert(emailOk ? `email ok` : `email NON va bene`);
+alert(emailOk ? `email ok` : `email NON va bene`); */
 
 /*
 Gioco dei dadi
@@ -29,3 +29,15 @@ Consigli del giorno:
 3. si ma noi cosa vogliamo fare?
 4. torniamo a scrivere in italiano
 5. proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro programma così come lo faremmo "a mano" */
+const userNumber = Math.round(Math.random() * 5) + 1;
+alert(`il numero che ti è capitato è ${userNumber}`);
+
+const userPc = Math.round(Math.random() * 5) + 1;
+alert(`invece al PC è capitato ${userPc}`);
+if (userNumber > userPc) {
+  alert(`Hai vinto`);
+} else if (userNumber < userPc) {
+  alert(`Hai perso`);
+} else {
+  alert(`Hai pareggiato`);
+}
