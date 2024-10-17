@@ -1,7 +1,7 @@
 /*Mail
 Chiedi all'utente la sua email,
 controlla che sia nella lista di chi può accedere,
-stampa un messaggio appropriato sull'esito del controllo. */
+stampa un messaggio appropriato sull'esito del controllo.  */
 // RACCOLTA DATI
 const userEmail = prompt(`Immetti la tua email`);
 const listEmail = [`me@email.it`, `tu@email.it`, `io@email.it`, `lei@email.it`];
@@ -14,7 +14,7 @@ for (let i = 0; i < listEmail.length; i++)
   if (userEmail === listEmail[i]) {
     emailOk = true;
   }
-alert(emailOk ? `email ok` : `email NON va bene`); 
+alert(emailOk ? `email ok` : `email NON va bene`);
 
 /*
 Gioco dei dadi
